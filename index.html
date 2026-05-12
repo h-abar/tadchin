@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#003f3d" />
+    <title>تدشين جائزة الأمير فيصل بن بندر للتميز والإبداع</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="launch-screen" data-state="idle">
+      <div class="banner-watermark" aria-hidden="true"></div>
+
+      <section class="brand" aria-label="هوية الجائزة">
+        <div class="motif" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <p>حفل تكريم الفائزين</p>
+        <h1>جائزة الأمير فيصل بن بندر بن عبدالعزيز</h1>
+        <h2>للتميز والإبداع في دورتها الرابعة</h2>
+      </section>
+
+      <section class="activation" aria-live="polite">
+        <div class="status-line" id="statusLine">بتشريف سموكم يبدأ التدشين</div>
+
+        <button class="palm-pad" id="palmPad" type="button" aria-label="منطقة تفعيل التدشين">
+          <span class="halo halo-one"></span>
+          <span class="halo halo-two"></span>
+          <span class="scan-line"></span>
+          <span class="touch-glow"></span>
+          <img class="hand-mark" src="assets/hand-palm.svg" alt="" aria-hidden="true" />
+          <span class="palm-print" aria-hidden="true"></span>
+          <svg class="fingerprint-lines" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M60 30c20 0 34 14 34 34" />
+            <path d="M60 40c14 0 24 10 24 24" />
+            <path d="M60 50c8 0 14 6 14 14" />
+            <path d="M51 35c-14 5-24 18-24 34 0 17 10 30 25 36" />
+            <path d="M45 48c-7 5-12 13-12 23 0 12 7 22 18 27" />
+            <path d="M60 64c0 13-7 24-18 31" />
+            <path d="M70 66c0 17-10 31-25 40" />
+            <path d="M82 69c0 19-10 35-27 45" />
+          </svg>
+          <span class="progress-ring" aria-hidden="true"></span>
+          <span class="progress-text" id="progressText">جاهز</span>
+        </button>
+      </section>
+
+      <section class="reveal" aria-live="assertive">
+        <div class="burst"></div>
+        <div class="seal">تم التدشين</div>
+        <h1>جائزة الأمير فيصل بن بندر بن عبدالعزيز<br />للتميز والإبداع</h1>
+        <p>في دورتها الرابعة</p>
+      </section>
+
+      <button class="reset" id="resetButton" type="button" aria-label="إعادة التجربة">إعادة</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
