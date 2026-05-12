@@ -198,7 +198,7 @@ body {
 
 .palm-pad {
   position: relative;
-  width: min(72dvh, 78vw, 760px);
+  width: min(58dvh, 64vw, 560px);
   aspect-ratio: 1 / 1;
   border: 0;
   border-radius: 50%;
@@ -270,7 +270,7 @@ body {
 .fingerprint-lines {
   position: absolute;
   z-index: 3;
-  width: 48%;
+  width: 46%;
   height: auto;
   transform: translateY(-1%) scaleX(-1);
   fill: none;
@@ -525,7 +525,7 @@ body {
   }
 
   .palm-pad {
-    width: min(61dvh, 96vw, 790px);
+    width: min(44dvh, 78vw, 560px);
   }
 }
 
@@ -551,7 +551,7 @@ body {
   }
 
   .palm-pad {
-    width: min(58dvh, 50vw, 520px);
+    width: min(48dvh, 42vw, 430px);
   }
 }
 
