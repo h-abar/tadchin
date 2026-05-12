@@ -581,6 +581,91 @@ body {
   }
 }
 
+/* iPad and tablet sized screens (portrait) */
+@media (orientation: portrait) and (min-width: 700px) {
+  .launch-screen {
+    padding: max(28px, var(--safe-top)) clamp(28px, 4vw, 64px) max(24px, var(--safe-bottom));
+    grid-template-rows: auto minmax(0, 1fr);
+    row-gap: clamp(8px, 1.5dvh, 22px);
+  }
+
+  .brand {
+    gap: clamp(6px, 0.9dvh, 14px);
+    padding-top: clamp(8px, 1.5dvh, 22px);
+  }
+
+  .motif span {
+    width: clamp(16px, 1.7dvh, 22px);
+    height: clamp(14px, 1.55dvh, 20px);
+  }
+
+  .brand p {
+    font-size: clamp(20px, 2.1dvh, 28px);
+  }
+
+  .brand h1 {
+    max-width: 14em;
+    font-size: clamp(38px, 4.2dvh, 60px);
+    line-height: 1.32;
+  }
+
+  .brand h2 {
+    max-width: 16em;
+    font-size: clamp(30px, 3.4dvh, 50px);
+    line-height: 1.32;
+  }
+
+  .status-line {
+    font-size: clamp(26px, 3dvh, 40px);
+    line-height: 1.4;
+  }
+
+  .palm-pad {
+    width: min(40dvh, 58vw, 420px);
+  }
+
+  .fingerprint-lines {
+    width: 44%;
+  }
+
+  .progress-text {
+    font-size: clamp(18px, 2.2dvh, 26px);
+  }
+}
+
+/* iPad and tablet sized screens (landscape) */
+@media (orientation: landscape) and (min-width: 1000px) and (min-height: 700px) {
+  .launch-screen {
+    padding: max(24px, var(--safe-top)) clamp(28px, 4vw, 72px) max(20px, var(--safe-bottom));
+    row-gap: clamp(10px, 1.6dvh, 22px);
+  }
+
+  .brand {
+    gap: clamp(6px, 0.9dvh, 14px);
+    padding-top: clamp(8px, 1.6dvh, 20px);
+  }
+
+  .brand h1 {
+    font-size: clamp(34px, 4.4dvh, 56px);
+  }
+
+  .brand h2 {
+    font-size: clamp(28px, 3.6dvh, 46px);
+  }
+
+  .brand p {
+    font-size: clamp(18px, 2.1dvh, 26px);
+  }
+
+  .status-line {
+    font-size: clamp(24px, 3.1dvh, 38px);
+  }
+
+  .palm-pad {
+    width: min(46dvh, 36vw, 400px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
