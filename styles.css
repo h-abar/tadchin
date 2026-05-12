@@ -504,28 +504,28 @@ body {
   }
 
   .brand p {
-    font-size: clamp(14px, 1.65dvh, 20px);
+    font-size: clamp(16px, 2dvh, 24px);
   }
 
   .brand h1 {
-    max-width: 9.8em;
-    font-size: clamp(24px, 3dvh, 37px);
-    line-height: 1.34;
+    max-width: 9.4em;
+    font-size: clamp(31px, 3.8dvh, 48px);
+    line-height: 1.32;
   }
 
   .brand h2 {
-    max-width: 11.5em;
-    font-size: clamp(20px, 2.45dvh, 31px);
-    line-height: 1.3;
+    max-width: 10.8em;
+    font-size: clamp(27px, 3.25dvh, 42px);
+    line-height: 1.22;
   }
 
   .status-line {
-    font-size: clamp(20px, 2.45dvh, 30px);
+    font-size: clamp(24px, 3.05dvh, 38px);
     line-height: 1.35;
   }
 
   .palm-pad {
-    width: min(32dvh, 62vw, 420px);
+    width: min(25dvh, 46vw, 310px);
   }
 }
 
