@@ -504,28 +504,54 @@ body {
   }
 
   .brand p {
-    font-size: clamp(16px, 2dvh, 24px);
+    font-size: clamp(18px, 2.2dvh, 26px);
   }
 
   .brand h1 {
-    max-width: 9.4em;
-    font-size: clamp(31px, 3.8dvh, 48px);
-    line-height: 1.32;
+    max-width: 9.2em;
+    font-size: clamp(36px, 4.5dvh, 58px);
+    line-height: 1.24;
   }
 
   .brand h2 {
-    max-width: 10.8em;
-    font-size: clamp(27px, 3.25dvh, 42px);
-    line-height: 1.22;
+    max-width: 10.5em;
+    font-size: clamp(30px, 3.65dvh, 48px);
+    line-height: 1.18;
   }
 
   .status-line {
-    font-size: clamp(24px, 3.05dvh, 38px);
+    font-size: clamp(28px, 3.4dvh, 44px);
     line-height: 1.35;
   }
 
   .palm-pad {
-    width: min(25dvh, 46vw, 310px);
+    width: min(20dvh, 34vw, 240px);
+  }
+}
+
+@media (orientation: portrait) and (pointer: coarse) {
+  .brand p {
+    font-size: clamp(18px, 2.3dvh, 28px);
+  }
+
+  .brand h1 {
+    font-size: clamp(38px, 4.8dvh, 62px);
+  }
+
+  .brand h2 {
+    font-size: clamp(31px, 3.9dvh, 50px);
+  }
+
+  .status-line {
+    font-size: clamp(28px, 3.6dvh, 46px);
+  }
+
+  .palm-pad {
+    width: min(18dvh, 32vw, 220px);
+  }
+
+  .fingerprint-lines {
+    width: 44%;
   }
 }
 
