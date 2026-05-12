@@ -54,6 +54,12 @@
     }
   }
 
+  function vibrate(pattern) {
+    if ("vibrate" in navigator) {
+      navigator.vibrate(pattern);
+    }
+  }
+
   function requestFullScreen() {
     const root = document.documentElement;
     if (!document.fullscreenElement && root.requestFullscreen) {
@@ -66,6 +72,7 @@
     isRunning = true;
     event.preventDefault();
     requestFullScreen();
+    vibrate([90, 45, 140]);
     playLaunchSound();
     screen.dataset.state = "scanning";
     setProgress(0);
@@ -83,6 +90,7 @@
       window.setTimeout(() => {
         screen.dataset.state = "complete";
         statusLine.textContent = "تم التدشين";
+        vibrate([180, 70, 220]);
       }, 3000)
     );
   }
